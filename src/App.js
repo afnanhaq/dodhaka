@@ -14,7 +14,7 @@ class App extends Component {
       eventlist: [],
     }
   }
-
+// fetching from server
   componentDidMount() {
     fetch('https://cryptic-reaches-85854.herokuapp.com/home')
     .then(response => response.json())
