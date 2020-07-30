@@ -77,7 +77,7 @@ class UpdateSignin extends Component {
   	}
 
 	handleLoginSubmit(event) {
-      	fetch('http://localhost:3003/updatesignin', {
+      	fetch('https://cryptic-reaches-85854.herokuapp.com/updatesignin', {
       	method: 'post',
       	headers: {'Content-Type': 'application/json'},
       	body: JSON.stringify({

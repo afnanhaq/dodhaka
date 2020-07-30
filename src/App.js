@@ -16,7 +16,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('http://localhost:3003/home')
+    fetch('https://cryptic-reaches-85854.herokuapp.com/home')
     .then(response => response.json())
     .then(events => this.setState({eventlist: events}))
   }

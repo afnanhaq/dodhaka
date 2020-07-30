@@ -95,7 +95,7 @@ class EventForm extends Component {
     }
 
   handleSubmit (event) {
-      fetch('http://localhost:3003/postevent', {
+      fetch('https://cryptic-reaches-85854.herokuapp.com/postevent', {
       	method: 'post',
       	headers: {'Content-Type': 'application/json'},
       	body: JSON.stringify({

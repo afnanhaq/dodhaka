@@ -14,7 +14,7 @@ class EventPage extends Component {
 
 	componentDidMount() {
 		const { id } = this.props.match.params
-		fetch(`http://localhost:3003/events/${id}`)
+		fetch(`https://cryptic-reaches-85854.herokuapp.com/events/${id}`)
 		.then(response => response.json())
 		.then(eventdetails => this.setState({ event: eventdetails })
 		)
